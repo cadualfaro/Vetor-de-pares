@@ -1,0 +1,30 @@
+/*
+Implementar um algoritmo que le um valor N e cria um vetor que armazena os primeiros N numeros pares
+ */
+package atividade.pkg1;
+import java.util.Scanner;
+
+public class Atividade1 {
+
+    public static void main(String[] args) {
+        int valor, i;
+            Scanner my_scan = new Scanner(System.in);
+            
+        System.out.println("O programa ira mostrar os numeros pares menores que o valor digitado");
+        System.out.println("\nDigite o valor: ");
+        
+            valor = my_scan.nextInt();
+        
+        int v[] = new int [valor];
+        System.out.print("\n");
+        System.out.println("Os numeros pares sao: ");
+        System.out.print("\n");
+        for(i=0; i<valor; i++){
+
+            if(i%2 == 0){
+                v[i] = i;
+                System.out.println(v[i]);
+            }
+            }
+        }
+    }
